@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Titulo da pagina</title>
+    <style type="text/css">
+        /* mais generico*/
+        * {font-family:arial}
+
+        /*generico - tags*/
+       body {background-color: #eeeeee;}
+        h1 {border:1px solid red;padding:10px;background-color: #fc9;text-align: center;}
+        p {color: green}
+        table {margin:30px}
+        td,th {padding:10px}
+        th {background-color: #cccccc;}
+
+        /* menos generico - classes*/
+        .diferente {color:blue}
+
+
+        /* especifico - ids*/
+        #cab {text-align: center;}
+        #principal {width: 800px;margin:0 auto;background-color: white; padding: 20px}
+    </style>
+</head>
+
+<body>
+    <div id="principal">
+    <h1 id="cab" style="color:red;font-family:arial">Teste de cabeçalho</h1>
+    <p>Primeiro paragrafo</p>
+    <p>Primeiro paragrafo</p>
+    <p>Primeiro paragrafo</p>
+    <h1>Outro cabeçalho</h1>
+    <p class="diferente">Primeiro paragrafo.<br>Pulando linha dentro do paragrafo</p>
+    <p class="diferente">Primeiro paragrafo</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <img src="data:image/jpeg;base64,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" /><br>
+    UOL
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Rebeca</th>
+            <th>Idade</th>
+            <th class="diferente">Cidade</th>
+        </tr>
+        <tr>
+            <td>Rebeca</td>
+            <td>25</td>
+            <td>Mandaguari</td>
+        <tr>
+        <tr>
+            <td>Rebeca</td>
+            <td>25</td>
+            <td>Mandaguari</td>
+        <tr>
+        <tr>
+            <td>Rebeca</td>
+            <td>25</td>
+            <td>Mandaguari</td>
+        <tr>
+        <tr>
+            <td>Rebeca</td>
+            <td>25</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <th>Rebeca</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                    <tr>
+                        <td>Rebeca</td>
+                        <td>25</td>
+                        <td>Mandaguari</td>
+                    <tr>
+                    <tr>
+                        <td>Rebeca</td>
+                        <td>25</td>
+                        <td>Mandaguari</td>
+                    <tr>
+                    <tr>
+                        <td>Rebeca</td>
+                        <td>25</td>
+                        <td>Mandaguari</td>
+                    <tr>
+                    <tr>
+                        <td>Rebeca</td>
+                        <td>25</td>
+                        <td>Mandaguari</td>
+                    <tr>
+                </table>
+            </td>
+        <tr>
+    </table>
+    <p><a /href="http://www.uol.com.br">Este é um link</a>
+    <p>
+    <p><a /href="#cab">Subir</a>
+    <div>    
+    <p>
+</body>
+
+</html>
