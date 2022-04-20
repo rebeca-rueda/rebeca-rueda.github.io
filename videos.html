@@ -43,29 +43,6 @@
 
 <div class="container mt-5">
   <div class="row">
-<ul class="pagination">
-  <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">Anterior</a></li>
-  <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">1</a></li>
-  <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">2</a></li>
-  <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">3</a></li>
-  <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">Próximo</a></li>
-</ul>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script> 
-const ativar=(elemento)=>{
-  let itens=document.getElementsByClassName("page-item");
-  for(i=0;i<itens.length;i++){
-    itens[i].classList.remove("active");
-  }
-  elemento.classList.add("active");
-}
-</script>
-
-
-
-
-
     <div class="col-sm-4"><!--primeir div-->
       <h2>Melhores Memes e Vídeos Engraçados</h2>
       <h5> 19/04/2022</h5>
@@ -141,6 +118,25 @@ const ativar=(elemento)=>{
       <p><center><b>Aperta o play..</b></center></p>
     </div> <!--fecha 12-->
 
+    <ul class="pagination pagination justify-content-end">
+      <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">Anterior</a></li>
+      <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">1</a></li>
+      <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">2</a></li>
+      <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">3</a></li>
+      <li class="page-item" onclick="ativar(this)"><a class="page-link" href="#">Próximo</a></li>
+    </ul>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script> 
+    const ativar=(elemento)=>{
+      let itens=document.getElementsByClassName("page-item");
+      for(i=0;i<itens.length;i++){
+        itens[i].classList.remove("active");
+      }
+      elemento.classList.add("active");
+    }
+    </script>
+
   </div><!--div row-->
 </div><!--div container-->
 
@@ -148,5 +144,5 @@ const ativar=(elemento)=>{
   <p>Desenvolvido por Rebeca - 2022</p>
 </div>
 
-</body>
+</body> 
 </html>
